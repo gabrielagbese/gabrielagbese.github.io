@@ -1,0 +1,47 @@
+<!-- search for alt=creative -->
+swap for index.html
+<!-- add at top -->
+<link rel="stylesheet" href="../stylex.css">
+<!-- at <div class="x-navbar-inner">
+insert -->
+<!-- new nav here -->
+<div class="navbar">
+    <div class="topnav" id="myTopnav">
+        
+        <div class="nav-main">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="spaces.html">Work Spaces</a>
+            <a href='events.html'>Events</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="nav-mobile">
+            <a class="menu-button" href="#menu" onClick="toggleMenu()">Menu</a>
+        </div>
+        
+    </div>
+</div>
+<div id="dropdown">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="spaces.html">Work Spaces</a>
+    <a href='events.html'>Events</a>
+    <a href="contact.html">Contact Us</a>
+</div>
+<!-- 
+and just above closing body -->
+<script>
+    type="text/javascript"
+    const toggleMenu = () => {
+        console.log("clicked");
+        var x = document.getElementById("dropdown");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+</script>
+
+<!-- remove hits -->
+
